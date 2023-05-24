@@ -27,8 +27,8 @@ async function handleCallStateChange(call) {
 async function handleViewStateChange(viewState){
     if(viewState === 'IN_FOCUS'){
         await sidebar.clearBadge();
-        if(callInfo){
-            window.location.href = `https://directory.cisco.com/dir/empquery.go?q=2002`
+        if(callInfo) {
+            window.location.href = `https://directory.cisco.com/dir/empquery.go?q=rohshar6`
         }
     }
 }
