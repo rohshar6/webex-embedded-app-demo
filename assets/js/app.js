@@ -1,6 +1,6 @@
-let callInfo, sidebar;
+let callInfo, sidebar, app;
 window.onload = async () => {
-    const app = new window.webex.Application();
+    app = new window.webex.Application();
     await app.onReady();
     sidebar = await app.context.getSidebar();
     app.listen().then(() => {
