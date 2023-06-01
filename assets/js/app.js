@@ -28,7 +28,7 @@ async function handleViewStateChange(viewState){
     if(viewState === 'IN_FOCUS'){
         await sidebar.clearBadge();
         if(callInfo) {
-            await app.openUrlInSystemBrowser("https://jsonplaceholder.typicode.com/todos/200");
+            await app.application.openUrlInSystemBrowser("https://jsonplaceholder.typicode.com/todos/200");
         }
     }
 }
