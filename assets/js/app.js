@@ -26,7 +26,7 @@ async function handleCallStateChange(call) {
 
 async function handleViewStateChange(viewState){
     if(viewState === 'IN_FOCUS'){
-        await sidebar.clearBadge();
+        sidebar.clearBadge();
         if(callInfo) {
             await app.openUrlInSystemBrowser("https://jsonplaceholder.typicode.com/todos/200");
             callInfo = null;
