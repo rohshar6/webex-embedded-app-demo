@@ -29,6 +29,7 @@ async function handleViewStateChange(viewState){
         await sidebar.clearBadge();
         if(callInfo) {
             await app.openUrlInSystemBrowser("https://jsonplaceholder.typicode.com/todos/200");
+            callInfo = null;
         }
     }
 }
