@@ -28,7 +28,7 @@ async function handleViewStateChange(viewState){
     if(viewState === 'IN_FOCUS'){
         await sidebar.clearBadge();
         if(callInfo) {
-            window.location.href = `https://directory.cisco.com/dir/empquery.go?q=rohshar6`
+            window.location.href = `https://jsonplaceholder.typicode.com/todos/200`
         }
     }
 }
